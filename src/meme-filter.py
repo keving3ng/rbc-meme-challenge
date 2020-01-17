@@ -17,7 +17,10 @@ def sum_total_points(data):
 
 def calc_rank(data, rank):
     # The data is 0 indexed, rank will be 1
-    points = data[rank - 1]['points']
+    try:
+        points = data[rank - 1]['points']
+    except IndexError:
+        print("Index out of range")
     print("To earn rank {} on the meme leaderboard, you will need more than {} points".format(rank, points))
 
 if __name__ == "__main__":
