@@ -7,14 +7,13 @@ def print_clean_number(num):
     return '{:.1f}k'.format(num / 1000) 
 
 def filter_memes(data, threshold=60000):
-    for meme in data:
-        if (meme['points'] < threshold):
-            break
+    popular_memes = [meme for meme in data if meme['points'] > threshold]
+    for meme in popular_memes:
         print("{} pts - {} by {} on {}".format(print_clean_number(meme['points']), meme['title'], meme['author'], meme['link']))
 
 def sum_total_points(data):
     total_pts = sum([meme['points'] for meme in data])
-    return print_clean_number(total_pts)
+    return total_pts
 
 def calc_rank(data, rank):
     # The data is 0 indexed, rank will be 1
