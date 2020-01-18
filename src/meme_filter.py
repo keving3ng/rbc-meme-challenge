@@ -1,4 +1,4 @@
-#!/venv/bin/python
+#! venv/bin/python
 import requests
 
 API = "https://memeservice.cfapps.io/api/memes"
@@ -22,6 +22,7 @@ def calc_rank(data, rank):
     except IndexError:
         print("Index out of range")
     print("To earn rank {} on the meme leaderboard, you will need more than {} points".format(rank, points))
+    return points
 
 if __name__ == "__main__":
     try:
