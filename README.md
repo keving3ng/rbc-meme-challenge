@@ -41,6 +41,13 @@ $ src/meme_filter.py
 
 # Unit Testing
 
+You may have to install pytest on your own.
+~~~~
+$ pip install pytest
+OR
+$ sudo apt install python-pytest
+~~~~
+
 Unit tests are written in pytest. To run the pytest, run the following command
 
 ~~~~
