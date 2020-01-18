@@ -10,6 +10,8 @@ def filter_memes(data, threshold=60000):
     popular_memes = [meme for meme in data if meme['points'] > threshold]
     for meme in popular_memes:
         print("{} pts - {} by {} on {}".format(print_clean_number(meme['points']), meme['title'], meme['author'], meme['link']))
+    
+    return len(popular_memes)
 
 def sum_total_points(data):
     total_pts = sum([meme['points'] for meme in data])
@@ -31,7 +33,7 @@ if __name__ == "__main__":
     except:
         print("Error")
     
-    filter_memes(data)
+    print(filter_memes(data, threshold=60000))
     input('\nPress Enter to Continue...')
     print('\nPoints total={}'.format(sum_total_points(data)))
     input('\nPress Enter to Continue...')
