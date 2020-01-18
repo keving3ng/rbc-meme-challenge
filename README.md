@@ -6,7 +6,7 @@
 
 # Implementation
 
-Python has a built in module for reading json. Using the requests library, It is very
+Python has a built in module for reading json. Using the requests library, a call is made to the provided API and the data is read using the module. Then, most of these problems can be tackled with various Python list comprehensions. 
 
 # Getting Started
 ###### These instructions were written for Ubuntu. Your experience may vary.
@@ -24,7 +24,7 @@ $ cd rbc-meme-challenge
 ~~~~
 
 Create a virtualenv, name it 'venv', and activate it.
-~~~~~
+~~~~
 $ virtualenv venv
 $ source venv/bin/activate
 ~~~~
