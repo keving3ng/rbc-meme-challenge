@@ -8,7 +8,7 @@ packaging==20.0
 pluggy==0.13.1
 py==1.8.1
 pyparsing==2.4.6
--e git+git@github.com:keving3ng/rbc-meme-challenge.git@9ebef9be000dd1e8ed0d45cc67fbcbd24170359c#egg=pytest
+-e git+git@github.com:keving3ng/rbc-meme-challenge.git@679f38fee35a05759720263ff4cb4ae984e30adc#egg=pytest
 requests==2.22.0
 six==1.14.0
 urllib3==1.25.7
