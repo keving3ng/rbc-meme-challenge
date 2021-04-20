@@ -6,7 +6,7 @@ importlib-metadata==1.4.0
 more-itertools==8.1.0
 packaging==20.0
 pluggy==0.13.1
-py==1.8.1
+py==1.10.0
 pyparsing==2.4.6
 -e git+git@github.com:keving3ng/rbc-meme-challenge.git@679f38fee35a05759720263ff4cb4ae984e30adc#egg=pytest
 requests==2.22.0
